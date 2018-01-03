@@ -7,4 +7,6 @@ def jaccard(set1, set2):
     stores_all_together = len(set1 | set2)
     return stores_in_common / float(stores_all_together)
 
-print jaccard(user1, user2)
+# The jaccard function shows how the two users have same
+# preferences for clothes stores
+print 'the jaccard result is:', jaccard(user1, user2)
