@@ -17,4 +17,11 @@ p_not_survived = 1 - p_survived
 p_male = (titanic.Sex == 'male').sum() / num_rows
 p_female = 1 - p_male
 
-# TODO: Continue
+# Calculate probability to survive for a female
+# P(Survived|Female) = P(Female|Survived) * P(Survived) / P(Female)
+#                    = P(Female AND Survived) / P(Female)
+num_female = titanic[titanic.Sex == 'female'].shape[0]
+survived_female = titanic[(titanic.Sex == 'female') & (titanic.Survived == 'yes')].shape[0]
+p_survived_female = survived_female / float(num_female)
+
+print 'Probability to survive for a female:', p_survived_female
