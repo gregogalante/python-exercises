@@ -1,5 +1,6 @@
 import random
 import matplotlib.pyplot as plt
+import pylab as p
 
 def random_variable_of_dice_roll():
     return random.randint(1, 7)
@@ -15,3 +16,5 @@ for num_trial in num_trials:
 plt.plot(num_trials, avgs)
 plt.xlabel('Number of trials')
 plt.ylabel('Average')
+
+p.show()
