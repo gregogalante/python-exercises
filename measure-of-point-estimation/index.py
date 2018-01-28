@@ -1,10 +1,6 @@
 import numpy as np
 import pandas as pd
 import scipy.stats as stats
-import matplotlib.pyplot as plt
-import random
-import math
-import pylab as p
 
 # A point estimate is an estimate of a population parameter based on
 # sample data.
